@@ -1,0 +1,50 @@
+@mixin bp($point) {
+	@if ($MQs) {
+		$bp-smallview: "(max-width: 600px)";
+		$bp-largeview: "(max-width: 1250px)";
+		$bp-largerview: "(max-width: 1600px)";
+		$bp-ipad: "(min-width: 768px) and (max-width: 1024px)";
+		$bp-ipadl: "(min-width: 768px) and (max-width: 1024px) and (orientation: landscape)";
+		$bp-ipadp: "(min-width: 768px) and (max-width: 1024px) and (orientation: portrait)";
+		$bp-ipadpro: "(min-width: 1024px) and (max-width: 1366px)";
+		$bp-ipadprol: "(min-width: 1024px) and (max-width: 1366px) and (orientation: landscape)";
+		$bp-ipadprop: "(min-width: 1024px) and (max-width: 1366px) and (orientation: portrait)";
+		@if $point == larger-view {
+			@media #{$bp-largerview} {
+				@content;
+			}
+		} @else if $point == large-view {
+			@media #{$bp-largeview} {
+				@content;
+			}
+		} @else if $point == small-view {
+			@media #{$bp-smallview} {
+				@content;
+			}
+		} @else if $point == ipad {
+			@media #{$bp-ipad} {
+				@content;
+			}
+		} @else if $point == ipadl {
+			@media #{$bp-ipadl} {
+				@content;
+			}
+		} @else if $point == ipadp {
+			@media #{$bp-ipadp} {
+				@content;
+			}
+		} @else if $point == ipadpro {
+			@media #{$bp-ipadpro} {
+				@content;
+			}
+		} @else if $point == ipadprol {
+			@media #{$bp-ipadprol} {
+				@content;
+			}
+		} @else if $point == ipadprop {
+			@media #{$bp-ipadprop} {
+				@content;
+			}
+		}
+	}
+}

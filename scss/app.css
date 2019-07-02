@@ -1,0 +1,46 @@
+@-webkit-keyframes drawLine {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes drawLine {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.main-container {
+  min-height: 100vh;
+}
+/*# sourceMappingURL=app.css.map */
