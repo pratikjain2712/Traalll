@@ -43,4 +43,9 @@ body {
 .main-container {
   min-height: 100vh;
 }
+
+.navbar {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
 /*# sourceMappingURL=app.css.map */
